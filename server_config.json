@@ -1,0 +1,28 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "listen":"127.0.0.1",
+    "port": 58081,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "your_own_uuid",
+          "alterId": 64
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+      "path": "/cgi-bin/list"
+      }
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
